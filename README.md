@@ -5,23 +5,6 @@ Este proyecto busca digitalizar la gestión de citas, pagos anticipados y contro
 
 ---
 
-## 📂 Documentación del Sprint 1
-
-- [Backlog normal](./4%20Sprint1_Backlog_Normal_KOMODO.docx)  
-- [Backlog priorizado](./5%20Sprint1_Backlog_Priorizado_KOMODO.docx)  
-- [Refinamiento del backlog](./3%20Sprint1_Refinamiento_Backlog_KOMODO.docx)  
-- [Sprint 1 priorizado](./7%20Sprint1_Priorizado.docx)  
-- [Refinamiento del sprint](./6%20Sprint1_Refinamiento_Sprint.docx)  
-- [Sprint 1 review](./1%20Sprint1_Review.docx)  
-- [Sprint 1 retrospectiva](./2%20Sprint1_Retrospectiva.docx)  
-- [Daily Meetings (PDF con 10 reuniones)](./DailyMeetings_Sprint1_KOMODO.pdf)  
-
----
-
-## 📂 Planificación Sprint 2
-- [Sprint 2 priorizado](./9%20Sprint2_Priorizado_KOMODO.docx)  
-
----
 
 ## 👥 Equipo
 - **Tamara Lecaros**  
