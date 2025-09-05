@@ -1,1 +1,1 @@
-# peluqueria
+# Kómodo
