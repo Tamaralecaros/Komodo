@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KÓMODO — Reservas</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/reservas.css">
+  <script type="module">
+    import { getRole } from "./js/roles.js";
+    // Si no tiene rol → home (clientes/trabajadores/admin usan misma vista con distintos datos)
+    if(!getRole()) location.href = "index.html";
+  </script>
+</head>
+<body>
+  <header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="index.html" aria-label="Inicio KÓMODO">
+      <img src="img/k_logo.png" alt="KÓMODO" class="brand__logo" />
+    </a>
+    </div>
+    <!-- Tabs del panel -->
+    <nav class="tabs">
+      <div class="wrap tabs__row" role="tablist" aria-label="Panel">
+        <a class="tab" href="vista_ingresos.html">Ingresos</a>
+        <a class="tab is-active" href="vista_reservas.html" aria-selected="true">Reservas</a>
+        <a class="tab" href="vista_inventario.html">Inventario</a>
+        <a class="tab" href="vista_solicitudes.html">Solicitudes</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="wrap" style="padding:28px 0 60px;">
+    <h1 style="margin:0 0 18px;">Reservas</h1>
+    <p class="muted" style="margin:0 0 18px;">* Datos locales. Al finalizar una reserva, se genera el ingreso automáticamente.</p>
+
+    <div class="table-scroll">
+      <table class="k-table" id="tbl_reservas" aria-label="Tabla de reservas">
+        <thead>
+          <tr>
+            <th style="width:56px">Nº</th>
+            <th>Cliente</th>
+            <th>Servicio</th>
+            <th>Peluquero/a</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Estado</th>
+            <th class="ta-r">Abono</th>
+            <th class="ta-r">Saldo</th>
+            <th class="ta-r">Total</th>
+            <th style="width:200px">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tbody_reservas"><!-- js/reservas.js pinta filas --></tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="wrap"><small>© <span id="year"></span> KÓMODO — Proyecto académico</small></div></footer>
+  <script type="module" src="js/reservas.js"></script>
+</body>
+</html>

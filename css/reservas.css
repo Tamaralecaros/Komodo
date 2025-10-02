@@ -1,0 +1,19 @@
+/* reservas.css — MÓDULO RESERVAS (tabla, badges y acciones) */
+
+/* Alineación de celdas */
+.k-table th, .k-table td { vertical-align: middle; }
+
+/* Estado de la reserva */
+.badge--ok     { background:#1f1f1f; border:1px solid #2c2c2c; padding:6px 12px; border-radius:999px; color:#cfe9cf; }
+.badge--pend   { background:#1f1f1f; border:1px solid #2c2c2c; padding:6px 12px; border-radius:999px; color:#ffd98a; }
+.badge--cancel { background:#281a1a; border:1px solid #462f2f; padding:6px 12px; border-radius:999px; color:#ffb3b3; }
+
+/* Columna Acciones */
+.k-actions{ display:flex; flex-direction:column; gap:8px; align-items:flex-start; }
+.k-actions .btn{ min-width:140px; }
+.k-actions .btn.btn--ghost{ opacity:.9; }
+
+/* Detalles de layout útiles */
+.k-table td[data-col="fecha"],
+.k-table td[data-col="hora"]{ white-space:nowrap; }
+.k-table tbody tr{ border-top:1px solid #1c1c1c; }

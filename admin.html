@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KÓMODO — Ingresos Admin</title>
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/reservas.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="brand">
+        <img src="img/k-logo.png" alt="KÓMODO" class="brand__logo">
+        <span class="brand__text">Admin</span>
+      </a>
+      <nav class="header__nav">
+        <a class="nav__link" href="vista_reservas.html">Reservas</a>
+        <a class="nav__link" href="cliente.html">Cotizador</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="wrap admin">
+    <h1>Panel de Ingresos</h1>
+
+    <!-- KPIs -->
+    <div class="grid4" style="margin:20px 0;">
+      <div class="k-card">
+        <div class="k-card__title">Total ingresos</div>
+        <div id="kpi_total_ingresos" class="k-card__value">$0</div>
+      </div>
+      <div class="k-card">
+        <div class="k-card__title">Tickets</div>
+        <div id="kpi_tickets" class="k-card__value">0</div>
+      </div>
+      <div class="k-card">
+        <div class="k-card__title">Promedio</div>
+        <div id="kpi_promedio" class="k-card__value">$0</div>
+      </div>
+      <div class="k-card">
+        <div class="k-card__title">Últimos 7 días</div>
+        <div id="kpi_7dias" class="k-card__value">$0</div>
+      </div>
+    </div>
+
+    <!-- Tabla de ingresos -->
+    <div class="table-scroll">
+      <table id="tbl_mov" class="k-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fecha</th>
+            <th>Cliente</th>
+            <th>Servicio</th>
+            <th>Método</th>
+            <th class="ta-r">Monto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- admin.js pintará aquí -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> KÓMODO — Proyecto académico</small>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/admin.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
