@@ -13,15 +13,6 @@ Este proyecto busca digitalizar la gestión de citas, pagos anticipados y contro
 
 **Docente:** Marco Valenzuela  
 
----
-
-## 📌 Tecnologías contempladas
-- Frontend: HTML, CSS, JavaScript  
-- Backend: C# en Visual Studio  
-- Base de datos: SQL Server Express / SQLite  
-- Integraciones: Webpay (sandbox), correo SMTP  
-
----
 
 💡 Este repositorio incluye la documentación de los sprints, con backlog, retrospectivas y evidencias, como parte del desarrollo del proyecto **KÓMODO**.
 
